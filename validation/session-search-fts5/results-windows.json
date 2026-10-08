@@ -1,0 +1,51 @@
+{
+  "base_sha": "3865bde3feab9e3c9c5de15a85ff29eeab79328e",
+  "candidate_sha": "26f4f19281c5f2d8e5f30f658353f3c0eb23eac9",
+  "platform": "Windows-10-10.0.19045-SP0",
+  "python": "3.13.6 (tags/v3.13.6:4e66535, Aug  6 2025, 14:36:00) [MSC v.1944 64 bit (AMD64)]",
+  "sqlite": "3.50.4",
+  "repeats": 3,
+  "method": "Synthetic canonical JSONL; three-run medians, warm OS cache; first index separately timed",
+  "results": [
+    {
+      "label": "small",
+      "sessions": 200,
+      "messages_per_session": 20,
+      "canonical_bytes": 831801,
+      "cache_bytes": 1413120,
+      "main_match_ms": 242.26,
+      "first_index_match_ms": 237.35,
+      "warm_index_match_ms": 72.76,
+      "new_reader_warm_match_ms": 70.81,
+      "main_no_match_ms": 235.68,
+      "warm_index_no_match_ms": 69.95,
+      "main_batched_lock_only_ms": 113.28,
+      "warm_match_speedup": 3.33,
+      "fts_speedup_over_batched_main": 1.56,
+      "main_body_reads": 200,
+      "first_index_body_reads": 201,
+      "warm_index_body_reads": 1,
+      "outputs_equal": true
+    },
+    {
+      "label": "large",
+      "sessions": 300,
+      "messages_per_session": 500,
+      "canonical_bytes": 29663801,
+      "cache_bytes": 40202240,
+      "main_match_ms": 1328.96,
+      "first_index_match_ms": 2184.12,
+      "warm_index_match_ms": 106.28,
+      "new_reader_warm_match_ms": 106.2,
+      "main_no_match_ms": 1319.68,
+      "warm_index_no_match_ms": 101.3,
+      "main_batched_lock_only_ms": 1132.43,
+      "warm_match_speedup": 12.5,
+      "fts_speedup_over_batched_main": 10.66,
+      "main_body_reads": 300,
+      "first_index_body_reads": 301,
+      "warm_index_body_reads": 1,
+      "outputs_equal": true
+    }
+  ]
+}
